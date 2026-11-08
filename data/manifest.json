@@ -1,0 +1,40 @@
+{
+  "source": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
+  "source_final_url": "https://cave.cs.toronto.edu/kriz/cifar-10-python.tar.gz",
+  "archive_md5": "c58f30108f718f92721af3b95e74349a",
+  "archive_sha256": "6d958be074577803d12ecdefd02955f39262c83c16fe9348329d7fe0b5c001ce",
+  "test_batch_sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831",
+  "test_images": 10000,
+  "per_class": 1000,
+  "raw_shape": [
+    32,
+    32,
+    3
+  ],
+  "order": "official test_batch order, indices 0 through 9999",
+  "original_classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "prompt_classes": [
+    "airplane",
+    "car",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "train_split_used": false
+}

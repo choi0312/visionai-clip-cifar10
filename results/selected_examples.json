@@ -1,0 +1,34 @@
+[
+  {
+    "index": 0,
+    "reason": "Name wrong -> sentence correct"
+  },
+  {
+    "index": 52,
+    "reason": "Name wrong -> sentence correct"
+  },
+  {
+    "index": 223,
+    "reason": "Name correct -> sentence wrong"
+  },
+  {
+    "index": 295,
+    "reason": "Name correct -> sentence wrong"
+  },
+  {
+    "index": 5,
+    "reason": "Sentence + ensemble wrong"
+  },
+  {
+    "index": 9,
+    "reason": "Sentence + ensemble wrong"
+  },
+  {
+    "index": 3524,
+    "reason": "GT excluded from candidates"
+  },
+  {
+    "index": 5603,
+    "reason": "GT excluded from candidates"
+  }
+]

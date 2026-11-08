@@ -1,0 +1,190 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "seed": 42,
+  "classes": [
+    "airplane",
+    "car",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "original_class_names": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "prompts": {
+    "bare": [
+      [
+        "airplane"
+      ],
+      [
+        "car"
+      ],
+      [
+        "bird"
+      ],
+      [
+        "cat"
+      ],
+      [
+        "deer"
+      ],
+      [
+        "dog"
+      ],
+      [
+        "frog"
+      ],
+      [
+        "horse"
+      ],
+      [
+        "ship"
+      ],
+      [
+        "truck"
+      ]
+    ],
+    "photo": [
+      [
+        "a photo of an airplane."
+      ],
+      [
+        "a photo of a car."
+      ],
+      [
+        "a photo of a bird."
+      ],
+      [
+        "a photo of a cat."
+      ],
+      [
+        "a photo of a deer."
+      ],
+      [
+        "a photo of a dog."
+      ],
+      [
+        "a photo of a frog."
+      ],
+      [
+        "a photo of a horse."
+      ],
+      [
+        "a photo of a ship."
+      ],
+      [
+        "a photo of a truck."
+      ]
+    ],
+    "ensemble": [
+      [
+        "a photo of an airplane.",
+        "a blurry photo of an airplane.",
+        "a low resolution photo of an airplane.",
+        "a close-up photo of an airplane.",
+        "a photo of the airplane."
+      ],
+      [
+        "a photo of a car.",
+        "a blurry photo of a car.",
+        "a low resolution photo of a car.",
+        "a close-up photo of a car.",
+        "a photo of the car."
+      ],
+      [
+        "a photo of a bird.",
+        "a blurry photo of a bird.",
+        "a low resolution photo of a bird.",
+        "a close-up photo of a bird.",
+        "a photo of the bird."
+      ],
+      [
+        "a photo of a cat.",
+        "a blurry photo of a cat.",
+        "a low resolution photo of a cat.",
+        "a close-up photo of a cat.",
+        "a photo of the cat."
+      ],
+      [
+        "a photo of a deer.",
+        "a blurry photo of a deer.",
+        "a low resolution photo of a deer.",
+        "a close-up photo of a deer.",
+        "a photo of the deer."
+      ],
+      [
+        "a photo of a dog.",
+        "a blurry photo of a dog.",
+        "a low resolution photo of a dog.",
+        "a close-up photo of a dog.",
+        "a photo of the dog."
+      ],
+      [
+        "a photo of a frog.",
+        "a blurry photo of a frog.",
+        "a low resolution photo of a frog.",
+        "a close-up photo of a frog.",
+        "a photo of the frog."
+      ],
+      [
+        "a photo of a horse.",
+        "a blurry photo of a horse.",
+        "a low resolution photo of a horse.",
+        "a close-up photo of a horse.",
+        "a photo of the horse."
+      ],
+      [
+        "a photo of a ship.",
+        "a blurry photo of a ship.",
+        "a low resolution photo of a ship.",
+        "a close-up photo of a ship.",
+        "a photo of the ship."
+      ],
+      [
+        "a photo of a truck.",
+        "a blurry photo of a truck.",
+        "a low resolution photo of a truck.",
+        "a close-up photo of a truck.",
+        "a photo of the truck."
+      ]
+    ]
+  },
+  "training_epochs": 0,
+  "candidate_omission": {
+    "base_condition": "photo",
+    "removed_class_ids": [
+      3,
+      5
+    ],
+    "removed_classes": [
+      "cat",
+      "dog"
+    ],
+    "score_thresholds": [
+      0.5,
+      0.7,
+      0.8,
+      0.9,
+      0.95,
+      0.99
+    ]
+  },
+  "ensemble_rule": "L2-normalize each text vector, mean within class, L2-normalize class mean",
+  "selection": "all 10000 test_batch images in the original order; no training batches loaded",
+  "evaluation": "labels used only to compute metrics after scoring; no prompt selection or threshold tuning"
+}

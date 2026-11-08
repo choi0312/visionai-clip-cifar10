@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+data/*.gz
+data/*.npy
+results/image_features.npy
+.cache/
+.DS_Store

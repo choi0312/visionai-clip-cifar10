@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "images": 10000,
+  "conditions": [
+    "bare",
+    "photo",
+    "ensemble"
+  ],
+  "checks": [
+    "CSV/logits consistency",
+    "confusion counts",
+    "top-1/top-3",
+    "macro F1 from TP/FP/FN",
+    "paired changes",
+    "8-candidate softmax and threshold retention",
+    "example records"
+  ],
+  "sha256": {
+    "logits.npz": "4d32d32f901ce3d7d59d53b4d53048a7ba7f2084845ab1f069745f37d68e2dfa",
+    "predictions.csv": "d80f49cca69b1a771ea40b7d30ac6af5b7963648e109b3c71463d6085421e199",
+    "labels.npy": "fc48d9ecfdbeacce2dacf004498170f2df12e75e3485475017d2663b587a92f3"
+  }
+}

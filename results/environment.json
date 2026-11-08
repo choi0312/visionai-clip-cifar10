@@ -1,0 +1,61 @@
+{
+  "model": "openai/clip-vit-base-patch32",
+  "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "gpu": "Tesla T4",
+  "python": "3.13.16",
+  "packages": {
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "transformers": "4.57.1",
+    "numpy": "2.4.6",
+    "Pillow": "11.3.0",
+    "matplotlib": "3.10.0",
+    "requests": "2.32.4"
+  },
+  "dtype": "float32",
+  "batch_size": 128,
+  "seed": 42,
+  "image_count": 10000,
+  "class_count": 10,
+  "parameters": 151277313,
+  "projection_dim": 512,
+  "training_epochs": 0,
+  "logit_scale_exp": 100.0,
+  "timings": {
+    "text_encoding_s": 1.2564980880000007,
+    "image_loop_s": 52.967029688000025,
+    "image_preprocessing_s": 28.50537929100051,
+    "image_gpu_forward_s": 24.417994894000458
+  },
+  "peak_allocated_bytes": 1010001920,
+  "direct_forward_check_max_abs_logit_error": 4.38690185546875e-05,
+  "preprocessing": {
+    "_processor_class": "CLIPProcessor",
+    "do_resize": true,
+    "size": {
+      "shortest_edge": 224
+    },
+    "resample": 3,
+    "do_center_crop": true,
+    "crop_size": {
+      "height": 224,
+      "width": 224
+    },
+    "do_rescale": true,
+    "rescale_factor": 0.00392156862745098,
+    "do_normalize": true,
+    "image_mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "image_std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ],
+    "do_convert_rgb": true,
+    "image_processor_type": "CLIPImageProcessor"
+  },
+  "scope": "zero additional task-specific training; full CIFAR-10 test split, possible overlap with CLIP pretraining unknown"
+}

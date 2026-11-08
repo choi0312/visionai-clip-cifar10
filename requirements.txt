@@ -1,0 +1,5 @@
+transformers==4.57.1
+numpy==2.4.6
+Pillow==11.3.0
+matplotlib==3.10.0
+requests==2.32.4

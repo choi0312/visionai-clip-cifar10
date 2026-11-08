@@ -1,0 +1,28 @@
+{
+  "dataset": "CIFAR-10, Alex Krizhevsky, Vinod Nair, Geoffrey Hinton",
+  "source": "https://www.cs.toronto.edu/~kriz/cifar.html",
+  "example_indices": [
+    0,
+    52,
+    223,
+    295,
+    5,
+    9,
+    3524,
+    5603
+  ],
+  "images": "Only these eight 32x32 CIFAR test thumbnails are retained in example_pixels.npz and the annotated predictions figure. Enlarged with nearest interpolation; original copyright is not reassigned.",
+  "model_card_capture": {
+    "source": "https://huggingface.co/openai/clip-vit-base-patch32",
+    "captured_date": "2026-11-08",
+    "edit": "crop of actual model header/task badges; no license tag added"
+  },
+  "charts": "Computed from saved inference logits; labels/axes/metrics added for the experiment.",
+  "code_excerpt": "Edited excerpt/summary of actual inference algorithm and recorded outputs, not a screenshot of a terminal.",
+  "chart_layout_revision": {
+    "python": "3.12.14",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "purpose": "Move legend off recall bars; regenerate from the same saved logits. GPU results unchanged."
+  }
+}
